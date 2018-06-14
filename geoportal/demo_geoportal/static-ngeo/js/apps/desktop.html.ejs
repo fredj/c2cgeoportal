@@ -100,7 +100,15 @@
                 {{'Login' | translate}}
                 <a class="btn close" ng-click="mainCtrl.loginActive = false">&times;</a>
               </div>
-              <gmf-authentication></gmf-authentication>
+	      <div ng-if="!mainCtrl.gmfUser.username">
+		<a href="https://geomapfish-demo.camptocamp.com/fredj/wsgi/cas/login">cas login</a>
+	      </div>
+	      <div ng-if="mainCtrl.gmfUser.username">
+		<div>
+		  <span>{{'Logged in as' | translate}}</span><strong>{{ ::$ctrl.gmfUser.username }}</strong>
+		</div>
+		<a href="https://geomapfish-demo.camptocamp.com/fredj/wsgi/cas/logout">cas logout</a>
+	      </div>
             </div>
           </div>
           <div ng-show="mainCtrl.printPanelActive" class="row">

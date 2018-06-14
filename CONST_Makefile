@@ -311,7 +311,7 @@ CONFIG_VARS += sqlalchemy.url sqlalchemy_slave.url schema schema_static enable_a
 	tiles_url checker check_collector default_max_age jsbuild package srid \
 	reset_password fulltextsearch headers authorized_referers hooks stats db_chooser \
 	ogcproxy_enable dbsessions urllogin host_forward_host smtp c2c.base_path welcome_email host \
-	lingua_extractor interfaces_config interfaces default_interface
+	lingua_extractor interfaces_config interfaces default_interface cas
 MAKE_FILES = $(wildcard *.mk) CONST_Makefile
 
 # Secrets

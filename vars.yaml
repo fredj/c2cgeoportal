@@ -175,6 +175,8 @@ vars:
             service: js
             interface: oeedit
 
+  cas:
+    server: https://sandbox.georchestra.org/cas/
   authtkt:
     # One day
     timeout: 86400
